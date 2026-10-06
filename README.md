@@ -18,7 +18,7 @@ tripway/
 │   ├── destino1.jpeg
 │   ├── destino2.jpeg
 │   ├── destino3.jpeg
-│   └── servicos.jpeg
-│   └── contato.jpeg
+│   └── servicos.jpg
+│   └── contato.jpg
 └── README.md 
 
