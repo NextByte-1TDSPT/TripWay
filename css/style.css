@@ -1,0 +1,74 @@
+:root {
+  /* Cores */
+  --cor-primaria: #205858;
+  --cor-primaria-escura: #163f40;
+  --cor-destaque: #dfb271;
+  --cor-destaque-clara: #f4e4c9;
+  --cor-fundo: #fbf7f0;
+  --cor-superficie: #ffffff;
+  --cor-texto: #23302f;
+  --cor-texto-suave: #566564;
+
+  /* Fonte */
+  --fonte-principal: "Poppins", Arial, sans-serif;
+
+  /* Espaçamentos */
+  --espaco-p: 0.5rem;
+  --espaco-m: 1rem;
+  --espaco-g: 2rem;
+  --espaco-xg: 4rem;
+
+  /* Detalhes */
+  --raio: 0.75rem;
+  --sombra: 0 0.5rem 1.5rem rgba(22, 63, 64, 0.12);
+  --transicao: 0.25s ease;
+}
+
+/* --------------------------------------------------------------------------
+   2. Reset básico
+   -------------------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* --------------------------------------------------------------------------
+   3. Base
+   -------------------------------------------------------------------------- */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: var(--fonte-principal);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--cor-texto);
+  background-color: var(--cor-fundo);
+}
+
+main {
+  flex: 1;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+  color: var(--cor-primaria-escura);
+}
+
+section {
+  width: 90%;
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: var(--espaco-xg) 0;
+}
