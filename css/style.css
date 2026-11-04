@@ -82,7 +82,9 @@ a:hover {
   text-decoration: none;
   color: var(--cor-primaria-escura);
   background-color: var(--cor-destaque);
-  transition: background-color var(--transicao), border-color var(--transicao),
+  transition:
+    background-color var(--transicao),
+    border-color var(--transicao),
     color var(--transicao);
 }
 
@@ -135,7 +137,9 @@ a:hover {
   border-bottom: 0.125rem dashed transparent;
   font-weight: 500;
   text-decoration: none;
-  transition: color var(--transicao), border-color var(--transicao);
+  transition:
+    color var(--transicao),
+    border-color var(--transicao);
 }
 
 .menu a:hover,
@@ -158,11 +162,8 @@ a:hover {
   min-height: 70vh;
   padding: var(--espaco-xg) 8%;
   color: var(--cor-superficie);
-  background-image: linear-gradient(
-      90deg,
-      rgba(22, 63, 64, 0.85),
-      rgba(22, 63, 64, 0.35)
-    ),
+  background-image:
+    linear-gradient(90deg, rgba(22, 63, 64, 0.85), rgba(22, 63, 64, 0.35)),
     url("../images/banner.jpg");
   background-position: center;
   background-size: cover;
@@ -299,7 +300,6 @@ button:focus-visible {
   outline-offset: 0.1875rem;
 }
 
-
 /* PÁGINA DE PACOTES E SERVIÇOS */
 
 .pacotes-banner {
@@ -383,7 +383,8 @@ button:focus-visible {
   border-radius: var(--raio);
   background-color: var(--cor-superficie);
   box-shadow: var(--sombra);
-  transition: transform var(--transicao),
+  transition:
+    transform var(--transicao),
     box-shadow var(--transicao);
 }
 
@@ -449,7 +450,6 @@ button:focus-visible {
   margin-bottom: var(--espaco-g);
   color: var(--cor-superficie);
 }
-
 
 /* PÁGINA DE CONTATO */
 
@@ -582,7 +582,8 @@ button:focus-visible {
   font-size: 0.9rem;
   color: var(--cor-texto);
   background-color: var(--cor-fundo);
-  transition: border-color var(--transicao),
+  transition:
+    border-color var(--transicao),
     box-shadow var(--transicao);
 }
 
@@ -614,7 +615,8 @@ button:focus-visible {
   color: var(--cor-primaria-escura);
   background-color: var(--cor-destaque);
   cursor: pointer;
-  transition: background-color var(--transicao),
+  transition:
+    background-color var(--transicao),
     border-color var(--transicao);
 }
 
@@ -623,12 +625,10 @@ button:focus-visible {
   background-color: var(--cor-destaque-clara);
 }
 
-
 /* rESPONSIVIDADE*/
 
 /* TABLETS */
 @media (max-width: 900px) {
-
   .site-header {
     justify-content: center;
     flex-direction: column;
@@ -674,10 +674,8 @@ button:focus-visible {
   }
 }
 
-
 /* CELULARES */
 @media (max-width: 600px) {
-
   body {
     font-size: 0.9rem;
   }
@@ -728,7 +726,10 @@ button:focus-visible {
   .sobre {
     flex-direction: column;
     align-items: center;
-    gap: var(--espaco-g);
+    gap: 1.25rem;
+    padding-top: 2rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
   }
 
   .sobre img {
@@ -736,13 +737,19 @@ button:focus-visible {
     max-width: 100%;
   }
 
-  .sobre-texto h2 {
-    font-size: 1.6rem;
+  .sobre-texto {
+    flex: 0 1 auto;
+    width: 100%;
+    margin: 0;
   }
 
   .atalhos {
+    display: flex;
     flex-direction: column;
-    gap: var(--espaco-m);
+    gap: 1rem;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
   }
 
   .atalho {
@@ -863,7 +870,6 @@ button:focus-visible {
 
 /* CELULARES PEQUENOS */
 @media (max-width: 380px) {
-
   .menu {
     gap: 0.5rem 0.75rem;
   }
