@@ -230,3 +230,54 @@ a:hover {
 .atalho:hover {
   background-color: var(--cor-primaria-escura);
 }
+
+.destinos h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.destinos-intro {
+  margin-top: var(--espaco-p);
+  color: var(--cor-texto-suave);
+}
+
+/* flex-wrap + flex-basis: 3 cards no desktop, 2 no tablet e 1 no celular */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--espaco-g);
+  margin: var(--espaco-g) 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 17rem;
+  max-width: 23rem;
+  overflow: hidden;
+  border-radius: var(--raio);
+  background-color: var(--cor-superficie);
+  box-shadow: var(--sombra);
+  transition: transform var(--transicao);
+}
+
+.card:hover {
+  transform: translateY(-0.25rem);
+}
+
+.card img {
+  width: 100%;
+}
+
+.card-texto {
+  padding: 1.5rem;
+}
+
+.card-texto h2 {
+  margin-bottom: var(--espaco-p);
+  font-size: 1.25rem;
+}
+
+.card-texto p {
+  color: var(--cor-texto-suave);
+}
