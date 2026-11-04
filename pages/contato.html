@@ -68,6 +68,7 @@
                   name="nome"
                   placeholder="Ex: Maria Silva"
                   autocomplete="name"
+                  required
                 />
               </div>
 
@@ -79,12 +80,13 @@
                   name="email"
                   placeholder="Ex: maria@email.com"
                   autocomplete="email"
+                  required
                 />
               </div>
 
               <div class="form-group">
                 <label for="destino">Destino de interesse</label>
-                <select id="destino" name="destino">
+                <select id="destino" name="destino" required>
                   <option value="" selected disabled>
                     Selecione um destino
                   </option>
@@ -101,6 +103,7 @@
                     type="date"
                     id="data"
                     name="data"
+                    required
                   />
                 </div>
 
@@ -112,6 +115,7 @@
                     name="pessoas"
                     min="1"
                     placeholder="Ex: 2"
+                    required
                   />
                 </div>
               </div>
