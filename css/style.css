@@ -143,3 +143,90 @@ a:hover {
   border-color: var(--cor-destaque);
   color: var(--cor-primaria-escura);
 }
+
+#banner {
+  width: 100%;
+  max-width: none;
+}
+
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--espaco-m);
+  min-height: 70vh;
+  padding: var(--espaco-xg) 8%;
+  color: var(--cor-superficie);
+  background-image: linear-gradient(
+      90deg,
+      rgba(22, 63, 64, 0.85),
+      rgba(22, 63, 64, 0.1) 75%
+    ),
+    url("../images/banner.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.banner h1 {
+  font-size: clamp(2.25rem, 5vw, 3.75rem);
+  color: var(--cor-superficie);
+}
+
+.banner p {
+  max-width: 34rem;
+  font-size: 1.125rem;
+}
+
+.sobre {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--espaco-xg);
+}
+
+.sobre img {
+  flex: 1 1 18rem;
+  max-width: 24rem;
+  border-radius: var(--raio);
+  outline: 0.125rem dashed var(--cor-destaque);
+  outline-offset: 0.5rem;
+}
+
+.sobre-texto {
+  flex: 1 1 18rem;
+}
+
+.sobre-texto h2 {
+  margin-bottom: var(--espaco-m);
+  font-size: 2rem;
+}
+
+.sobre-texto p + p {
+  margin-top: var(--espaco-m);
+}
+
+.atalhos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--espaco-g);
+  padding-top: 0;
+}
+
+.atalho {
+  flex: 1 1 18rem;
+  padding: var(--espaco-g);
+  border-radius: var(--raio);
+  text-decoration: none;
+  background-color: var(--cor-primaria);
+  transition: background-color var(--transicao);
+}
+
+.atalho h2 {
+  font-size: 1.25rem;
+  color: var(--cor-superficie);
+}
+
+.atalho:hover {
+  background-color: var(--cor-primaria-escura);
+}
