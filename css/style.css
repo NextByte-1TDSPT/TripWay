@@ -9,24 +9,18 @@
   --cor-texto: #23302f;
   --cor-texto-suave: #566564;
 
-  /* Fonte */
   --fonte-principal: "Poppins", Arial, sans-serif;
 
-  /* Espaçamentos */
   --espaco-p: 0.5rem;
   --espaco-m: 1rem;
   --espaco-g: 2rem;
   --espaco-xg: 4rem;
 
-  /* Detalhes */
   --raio: 0.75rem;
   --sombra: 0 0.5rem 1.5rem rgba(22, 63, 64, 0.12);
   --transicao: 0.25s ease;
 }
 
-/* --------------------------------------------------------------------------
-   2. Reset básico
-   -------------------------------------------------------------------------- */
 *,
 *::before,
 *::after {
@@ -41,9 +35,6 @@ img {
   height: auto;
 }
 
-/* --------------------------------------------------------------------------
-   3. Base
-   -------------------------------------------------------------------------- */
 body {
   display: flex;
   flex-direction: column;
@@ -71,4 +62,84 @@ section {
   max-width: 72rem;
   margin: 0 auto;
   padding: var(--espaco-xg) 0;
+}
+
+a {
+  color: var(--cor-primaria);
+  transition: color var(--transicao);
+}
+
+a:hover {
+  color: var(--cor-primaria-escura);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.75rem;
+  border: 0.125rem solid var(--cor-destaque);
+  border-radius: 2rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--cor-primaria-escura);
+  background-color: var(--cor-destaque);
+  transition: background-color var(--transicao), border-color var(--transicao),
+    color var(--transicao);
+}
+
+.btn:hover {
+  color: var(--cor-primaria-escura);
+  background-color: var(--cor-destaque-clara);
+  border-color: var(--cor-destaque-clara);
+}
+
+.btn-secundario {
+  border-color: var(--cor-primaria);
+  color: var(--cor-primaria);
+  background-color: transparent;
+}
+
+.btn-secundario:hover {
+  color: var(--cor-superficie);
+  background-color: var(--cor-primaria);
+  border-color: var(--cor-primaria);
+}
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--espaco-p) var(--espaco-g);
+  padding: var(--espaco-p) 5%;
+  background-color: var(--cor-superficie);
+  box-shadow: var(--sombra);
+}
+
+/* O logo tem bastante branco em cima e embaixo: object-fit corta essa sobra */
+.logo img {
+  width: 7.5rem;
+  height: 5rem;
+  object-fit: cover;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--espaco-m) var(--espaco-g);
+  list-style: none;
+}
+
+.menu a {
+  padding-bottom: 0.25rem;
+  border-bottom: 0.125rem dashed transparent;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color var(--transicao), border-color var(--transicao);
+}
+
+.menu a:hover,
+.menu a.ativo {
+  border-color: var(--cor-destaque);
+  color: var(--cor-primaria-escura);
 }
