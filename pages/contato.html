@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../css/style.css" />
@@ -16,8 +16,9 @@
   <body>
     <header class="site-header">
       <a class="logo" href="../index.html">
-        <img src="../images/logo.jpeg" alt="TripWay" />
+        <img src="../images/logo.jpeg" alt="Logo da TripWay" />
       </a>
+
       <nav>
         <ul class="menu">
           <li><a href="../index.html">Home</a></li>
@@ -29,59 +30,108 @@
     </header>
 
     <main>
-      <section>
-        <h1>Simule sua Reserva</h1>
-        <p>Preencha o formulário abaixo para solicitar um orçamento.</p>
-
-        <img
-          src="../images/contato.jpg"alt="Pessoa entrando em contato por telefone"/>
-
-        <form action="">
+      <section class="contato-section">
+        <div class="contato-intro">
+          <span class="contato-etiqueta">VAMOS PLANEJAR SUA VIAGEM?</span>
+          <h1>Entre em contato com a TripWay</h1>
           <p>
-            <label for="nome">Nome Completo:</label>
-            <input type="text" id="nome" placeholder="Ex: Maria Silva" />
+            Conte para nós como seria a sua viagem ideal. Nossa equipe está
+            pronta para ajudar você a transformar seus planos em experiências
+            inesquecíveis.
           </p>
+        </div>
 
-          <p>
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" placeholder="Ex: maria@email.com" />
-          </p>
+        <div class="contato-container">
+          <div class="contato-imagem">
+            <img
+              src="../images/contato.jpg"
+              alt="Pessoa realizando atendimento por telefone"
+            />
 
-          <p>
-            <label for="destino">Destino de Interesse:</label>
+            <div class="contato-imagem-texto">
+              <h2>Sua próxima aventura começa aqui.</h2>
+              <p>Estamos aqui para ajudar em cada etapa do seu planejamento.</p>
+            </div>
+          </div>
 
-            <select id="destino">
-              <option value="praia">Praia</option>
-              <option value="montanha">Montanha</option>
-              <option value="cidade">Cidade Histórica</option>
-            </select>
-          </p>
+          <div class="contato-formulario">
+            <h2>Solicite seu orçamento</h2>
+            <p class="contato-descricao">
+              Preencha os campos abaixo para começarmos a planejar.
+            </p>
 
-          <p>
-            <label for="data">Data Pretendida:</label>
-            <input type="date" id="data" />
-          </p>
+            <form action="" method="get">
+              <div class="form-group">
+                <label for="nome">Nome completo</label>
+                <input
+                  type="text"
+                  id="nome"
+                  name="nome"
+                  placeholder="Ex: Maria Silva"
+                  autocomplete="name"
+                  required
+                />
+              </div>
 
-          <p>
-            <label for="pessoas">Quantidade de Pessoas:</label>
-            <input type="number" id="pessoas" placeholder="Ex: 2" />
-          </p>
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Ex: maria@email.com"
+                  autocomplete="email"
+                  required
+                />
+              </div>
 
-          <p>
-            <label for="mensagem">Mensagem:</label>
-            <br />
-            <textarea
-              id="mensagem"
-              placeholder="Digite uma mensagem ou observação sobre sua viagem"
-            ></textarea>
-          </p>
+              <div class="form-group">
+                <label for="destino">Destino de interesse</label>
+                <select id="destino" name="destino" required>
+                  <option value="" selected disabled>
+                    Selecione um destino
+                  </option>
+                  <option value="praia">Praia</option>
+                  <option value="montanha">Montanha</option>
+                  <option value="cidade">Cidade histórica</option>
+                </select>
+              </div>
 
-          <button type="submit">Enviar Solicitação</button>
-        </form>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="data">Data pretendida</label>
+                  <input type="date" id="data" name="data" required />
+                </div>
 
-        <p>
-          <a href="../index.html">Voltar para a Home</a>
-        </p>
+                <div class="form-group">
+                  <label for="pessoas">Quantidade de pessoas</label>
+                  <input
+                    type="number"
+                    id="pessoas"
+                    name="pessoas"
+                    min="1"
+                    placeholder="Ex: 2"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea
+                  id="mensagem"
+                  name="mensagem"
+                  rows="4"
+                  placeholder="Conte um pouco sobre sua viagem ideal..."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="contato-botao">
+                Enviar solicitação
+              </button>
+            </form>
+          </div>
+        </div>
       </section>
     </main>
 
