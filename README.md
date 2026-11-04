@@ -57,4 +57,4 @@ TripWay/
 ## 🔗 Links
 
 - **Repositório GitHub:** https://github.com/NextByte-1TDSPT/TripWay
-- **GitHub Pages:** nextbyte-1tdspt.github.io
+- **GitHub Pages:** https://nextbyte-1tdspt.github.io/TripWay/
