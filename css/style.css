@@ -622,3 +622,266 @@ button:focus-visible {
   border-color: var(--cor-destaque-clara);
   background-color: var(--cor-destaque-clara);
 }
+
+
+/* rESPONSIVIDADE*/
+
+/* TABLETS */
+@media (max-width: 900px) {
+
+  .site-header {
+    justify-content: center;
+    flex-direction: column;
+    padding: var(--espaco-m) 4%;
+  }
+
+  .menu {
+    justify-content: center;
+    gap: var(--espaco-m);
+  }
+
+  .sobre {
+    gap: var(--espaco-g);
+  }
+
+  .card {
+    flex: 1 1 40%;
+  }
+
+  .pacotes-banner {
+    gap: var(--espaco-g);
+  }
+
+  .pacotes-banner img {
+    max-width: 45%;
+  }
+
+  .pacote-card {
+    flex: 1 1 40%;
+  }
+
+  .contato-container {
+    flex-direction: column;
+  }
+
+  .contato-imagem {
+    min-height: 24rem;
+    flex: auto;
+  }
+
+  .contato-formulario {
+    width: 100%;
+  }
+}
+
+
+/* CELULARES */
+@media (max-width: 600px) {
+
+  body {
+    font-size: 0.9rem;
+  }
+
+  section {
+    width: 92%;
+    padding: var(--espaco-g) 0;
+  }
+
+  .site-header {
+    gap: var(--espaco-m);
+    padding: var(--espaco-m) 3%;
+  }
+
+  .logo img {
+    width: 6.5rem;
+    height: 4.5rem;
+  }
+
+  .site-header nav {
+    width: 100%;
+  }
+
+  .menu {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.75rem 1rem;
+  }
+
+  .menu a {
+    font-size: 0.85rem;
+  }
+
+  .banner {
+    min-height: 55vh;
+    padding: var(--espaco-g) 6%;
+    background-position: center;
+  }
+
+  .banner h1 {
+    font-size: 2rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
+
+  .sobre {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--espaco-g);
+  }
+
+  .sobre img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .sobre-texto h2 {
+    font-size: 1.6rem;
+  }
+
+  .atalhos {
+    flex-direction: column;
+    gap: var(--espaco-m);
+  }
+
+  .atalho {
+    width: 100%;
+    flex-basis: auto;
+  }
+
+  .destinos h1 {
+    font-size: 2rem;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+    gap: var(--espaco-g);
+  }
+
+  .card {
+    width: 100%;
+    max-width: 100%;
+    flex: 1 1 auto;
+  }
+
+  .pacotes-banner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--espaco-g);
+    padding-top: var(--espaco-g);
+  }
+
+  .pacotes-banner-texto {
+    width: 100%;
+  }
+
+  .pacotes-banner h1 {
+    font-size: 2rem;
+  }
+
+  .pacotes-banner img {
+    width: 100%;
+    max-width: 100%;
+    height: 15rem;
+  }
+
+  .pacotes-titulo h2 {
+    font-size: 1.6rem;
+  }
+
+  .pacotes-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pacote-card {
+    width: 100%;
+    max-width: 100%;
+    flex: 1 1 auto;
+  }
+
+  .pacotes-chamada {
+    padding: var(--espaco-g) var(--espaco-m);
+  }
+
+  .contato-section {
+    padding-top: var(--espaco-g);
+  }
+
+  .contato-intro h1 {
+    font-size: 1.8rem;
+  }
+
+  .contato-container {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .contato-imagem {
+    width: 100%;
+    min-height: 20rem;
+  }
+
+  .contato-imagem-texto {
+    padding: var(--espaco-g);
+  }
+
+  .contato-imagem-texto h2 {
+    font-size: 1.4rem;
+  }
+
+  .contato-formulario {
+    width: 100%;
+    padding: var(--espaco-m);
+  }
+
+  .contato-formulario h2 {
+    font-size: 1.4rem;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    font-size: 1rem;
+  }
+
+  .contato-botao {
+    width: 100%;
+  }
+
+  footer {
+    padding: var(--espaco-m);
+  }
+}
+
+/* CELULARES PEQUENOS */
+@media (max-width: 380px) {
+
+  .menu {
+    gap: 0.5rem 0.75rem;
+  }
+
+  .menu a {
+    font-size: 0.78rem;
+  }
+
+  .banner h1,
+  .pacotes-banner h1 {
+    font-size: 1.7rem;
+  }
+
+  .contato-imagem {
+    min-height: 17rem;
+  }
+
+  .pacote-card {
+    padding: var(--espaco-m);
+  }
+}
